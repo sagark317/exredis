@@ -169,6 +169,7 @@ defmodule Exredis.Api do
   defredis :zcount, [:key, :min, :max]
   defredis :zincrby, [:key, :increment, :member]
   defredis :zinterstore, [:destination, :numkeys, :key]#, ...]
+  defredis :zpopmin, [:key]
   defredis :zrange, [:key, :start, :stop]
   defredis :zrangebyscore, [:key, :start, :stop]
   defredis :zrank, [:key, :member]
